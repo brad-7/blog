@@ -3,7 +3,6 @@ title: "Trust Issues"
 date: 2021-04-12T08:55:29+05:30
 draft: false
 toc: false
-images:
 tags:
   - Forensics
   - volatility
