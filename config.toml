@@ -1,0 +1,131 @@
+baseURL = "http://example.org/"
+title   = "Rithvik"
+languageCode = "en-us"
+theme = "hugo-theme-hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Rithvik"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  description = "Rithvik's Blog"
+  keywords = ""
+  images = [""]
+  homeSubtitle = "Rithvik's Blog"
+  # backgroundImage = "assets/images/background.jpg"
+  disableReadOtherPosts = false
+  enableSharingButtons = true
+  customCSS = []
+  customJS  = []
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+  [params.footer]
+
+    bottomText = ["© Rithvik's Blog 2021, Powered by <a href=\"http://gohugo.io\">Hugo</a>"]
+  # Colors for favicons
+  #
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Commento is more than just a comments widget you can embed — 
+  # it’s a return to the roots of the internet. 
+  # An internet without the tracking and invasions of privacy. 
+  # An internet that is simple and lightweight. 
+  # An internet that is focused on interesting discussions, not ads. 
+  # A better internet.
+  # Uncomment this to enable Commento.
+  #
+  # [params.commento]
+  #   url = ""
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/rith_vik_7"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:vrithvik7@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/rith-vik-7"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/rithvik-vukka-741202182/"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+  [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "/tags/"
+  [[menu.main]]
+    identifier = "terminal"
+    name       = "Terminal"
+    url        = "https://rithvik007.netlify.app/"
+
