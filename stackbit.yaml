@@ -1,0 +1,35 @@
+stackbitVersion: ~0.3.0
+ssgName: hugo
+publishDir: public
+dataDir: data
+pagesDir: content
+assets:
+  referenceType: static
+  staticDir: static
+  uploadDir: assets
+  publicPath: /
+cmsName: git
+models:
+  post:
+    type: page
+    label: Post
+    folder: posts
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: boolean
+        name: draft
+        label: Draft
+      - type: boolean
+        name: toc
+        label: Toc
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
