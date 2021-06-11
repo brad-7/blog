@@ -3,7 +3,6 @@ title: "MemLabs Lab 1"
 date: 2021-04-08T09:06:31+05:30
 draft: false
 toc: false
-images:
 tags:
   - volatility
   - MemLabs
